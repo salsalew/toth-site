@@ -1,7 +1,7 @@
 * {
-    background-color: #262626;
-    color: #C3B8A3;
-    font-family: "Courier New", monospace;
+    background-color: #F1EEE9;
+    color: #614A42;
+    font-family: "Georgia", serif;
     font-size: 15px;
 }
 
@@ -27,57 +27,6 @@
                 align-items: center;
                 /* border: 2px solid white; */
             }
-
-                #name {
-                    font-size: 40px;
-                    /* border: 2px solid white; */
-                    margin-top: 15px;
-                    margin-bottom: 0px;
-                }
-
-                #subtitle {
-                    font-size: 20px;
-                    /* border: 2px solid white; */
-                    margin-top: 0px;
-                    margin-bottom: 20px;
-                }
-
-                .contact-button-container {
-                    display: flex;
-                    justify-content: center;
-                    /* border: 2px solid white; */
-                }
-
-                    .contact-button {
-                        padding: 0em .5em;
-                        margin: 10px 0px;
-                        margin-top: 5px;
-                    }
-
-            .blog-button-container {
-                display: flex;
-                justify-content: center;
-                width: 650px;
-                align-self: center;
-                /* border: 2px solid white; */
-            }
-
-                .blog-button {
-                    box-sizing: border-box;
-                    margin: 50px 20px;
-                    padding: 30px 10px;
-                    text-align: center;
-                    border: 1px solid #C3B8A3;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    flex: 1;
-                }
-
-                .blog-button:hover {
-                    background-color: #363636;
-                }
-
-
 
         .text-body {
             display: flex;
