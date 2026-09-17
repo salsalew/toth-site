@@ -46,10 +46,12 @@ body {
             height: 100%;
             margin: 0px 30px auto 30px;
             justify-content: space-between;
+            font-family: 'Canterbury', serif;
+            font-size: 20px;
         }
 
             .top-strip-logo {
-                font-family: 'Grimoire Noire', serif;
+                font-family: 'Canterbury', serif;
                 font-size: 40px;
                 justify-content: space-between;
                 display: flex;
