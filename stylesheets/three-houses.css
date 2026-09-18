@@ -62,7 +62,6 @@ a {
         background-color: #6C6A4A;
         z-index: 100;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #F1EEE9;
     }
     
         .top-strip-content {
@@ -77,7 +76,7 @@ a {
         }
 
             .top-strip-buttons {
-                
+                color: #614A42;
             }
 
             .top-strip-logo {
@@ -89,6 +88,53 @@ a {
                 width: 240px;
                 margin-top: 10px;
             }
+
+            
+/* hamburger menu */
+.menu-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-checkbox:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .hamburger-icon {
+        z-index: 105;
+        position: absolute;
+        margin: -25px 20px 0px 0px;
+        cursor: pointer;
+    }
+        
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #614A42;
+        border-radius: 20px;
+        width: 185px;
+        margin: 30px 15px auto 10px;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+        .navigation-link {
+            background-color: #F1EEE9;
+            width: 150px;
+            margin: 10px 5px 5px 5px;
+            color: #614A42;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
 /* content */
 .content {
