@@ -38,6 +38,11 @@ body {
     color: #614A42;
 }
 
+a {
+  text-decoration: none;
+  color: #F1EEE9;
+}
+
 /* sticky strip, top */
 .top-strip {
         position: sticky;
@@ -104,8 +109,8 @@ body {
 
         .decoration {
             width: 210px;
+            margin-top: 100px;
             /* background-color: #6C6A4A; */
-            margin: auto;
         }
 
         .house-container {
@@ -122,7 +127,7 @@ body {
         }
         
             .house-border {
-                border: 1.5px solid #614A42;
+                border: 1.75px solid #614A42;
                 border-radius: 30px;
                 width: 255px;
                 padding: 10px;
