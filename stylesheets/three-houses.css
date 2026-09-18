@@ -1,0 +1,141 @@
+html, body {
+  overscroll-behavior-y: none;
+}
+
+@font-face {
+  font-family: 'Grimoire Noire';
+  src: url('../fonts/GrimoireNoire.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canterbury';
+  src: url('../fonts/Canterbury.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Landsknecht';
+  src: url('../fonts/Landsknecht.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1EEE9;
+    margin: 0px 0px 0px 0px;
+    color: #614A42;
+}
+
+/* sticky strip, top */
+.top-strip {
+        position: sticky;
+        top: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 70px;
+        border-radius: 0px 0px 40px 40px;
+        background-color: #6C6A4A;
+        z-index: 100;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #F1EEE9;
+    }
+    
+        .top-strip-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0px 30px auto 30px;
+            justify-content: space-between;
+            font-family: 'Canterbury', serif;
+            font-size: 20px;
+        }
+
+            .top-strip-logo {
+                font-family: 'Canterbury', serif;
+                font-size: 40px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                width: 240px;
+            }
+
+/* content */
+.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F1EEE9;
+        border-radius: 70px;
+        margin: 30px auto 100px auto;
+    }
+
+    .header {
+        margin: auto;
+        text-align: center;
+    }
+
+        .header-image {
+            margin: 30px auto 30px auto;
+        }
+
+        .header-text {
+            font-family: 'Grimoire Noire', serif;
+            font-size: 65px;
+        }
+
+    .spread-container {
+        display: flex;
+        margin: 80px auto 30px auto;
+        justify-content: space-between;
+    }
+
+        .decoration {
+            width: 210px;
+            /* background-color: #6C6A4A; */
+            margin: auto;
+        }
+
+        .house-container {
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .house {
+            width: 280px;
+            margin: 5px;
+            /* background-color: #6C6A4A; */
+            align-items: center;
+        }
+        
+            .house-border {
+                border: 1.5px solid #614A42;
+                border-radius: 30px;
+                width: 255px;
+                padding: 10px;
+                text-align: center;
+                margin: auto;
+            }
+
+                .house-sigil {
+                    margin-top: -60px;
+                }
+
+                .house-name {
+                    font-family: 'Landsknecht', serif;
+                    font-size: 35px;
+                    margin-top: 20px;
+                }
