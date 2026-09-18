@@ -25,10 +25,11 @@ html, body {
 }
 
 body {
-    background-color: #6C6A4A;
+    background-color: #6C6A4E;
     margin: 0px 0px 0px 0px;
     color: #614A42;
 }
+
 
 /* sticky strip, top */
 .top-strip {
@@ -36,11 +37,12 @@ body {
         top: 0px;
         margin: 0px;
         width: 100%;
-        height: 70px;
+        height: 80px;
         border-radius: 0px 0px 40px 40px;
         background-color: #F1EEE9;
         z-index: 100;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #614A42;
     }
     
         .top-strip-content {
@@ -69,6 +71,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: auto;
         max-width: 800px;
         background-color: #F1EEE9;
         border-radius: 70px;
