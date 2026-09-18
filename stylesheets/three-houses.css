@@ -106,7 +106,8 @@ a {
 
         .header-text {
             font-family: 'Grimoire Noire', serif;
-            font-size: 65px;
+            font-size: 80px;
+            margin: 40px auto 30px auto;
         }
 
     .spread-container {
