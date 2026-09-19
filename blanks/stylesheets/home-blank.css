@@ -18,24 +18,38 @@ html, body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Landsknecht';
+  src: url('../fonts/Landsknecht.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Highborne Blackletter';
+  src: url('../fonts/HighborneBlackletter.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
     margin: 0px 0px 0px 0px;
     padding: 0px;
     box-sizing: border-box;
-    color:#614A42;
+}
+
+body {
+    background-color: #F1EEE9;
+    margin: 0px 0px 0px 0px;
+    color: #614A42;
 }
 
 a {
   text-decoration: none;
   color: #F1EEE9;
 }
-
-body {
-    background-color: #6C6A4E;
-    margin: 0px 0px 0px 0px;
-    color: #614A42;
-}
-
 
 /* sticky strip, top */
 .top-strip {
@@ -45,10 +59,9 @@ body {
         width: 100%;
         height: 80px;
         border-radius: 0px 0px 40px 40px;
-        background-color: #F1EEE9;
+        background-color: #6C6A4A;
         z-index: 100;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #614A42;
     }
     
         .top-strip-content {
@@ -62,6 +75,11 @@ body {
             font-size: 20px;
         }
 
+            .top-strip-buttons {
+                color: #614A42;
+                position: relative;
+            }
+
             .top-strip-logo {
                 font-family: 'Canterbury', serif;
                 font-size: 40px;
@@ -69,8 +87,10 @@ body {
                 display: flex;
                 align-items: center;
                 width: 240px;
+                margin-top: 10px;
             }
 
+            
 /* hamburger menu */
 .menu-checkbox {
     position: absolute;
@@ -118,66 +138,106 @@ body {
         }
 
 /* content */
-    .content {
+.content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
-        max-width: 800px;
         background-color: #F1EEE9;
         border-radius: 70px;
         margin: 30px auto 100px auto;
     }
 
-        .head-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 60px;
-        }
+    .header {
+        margin: auto;
+        text-align: center;
+    }
 
-            .info {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                /* border: 2px solid white; */
-            }
-
-                .body-header {
-                    font-family: 'Grimoire Noire';
-                    font-size: 120px;
-                    margin-bottom: 10px;
-                    text-align: center;
-                }
-
-        .text-body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 25px;
-            font-family: "Canterbury", serif;
-            /* border: 2px solid white; */
-            width: 600px;
+        .header-image {
             margin: 30px auto 30px auto;
         }
 
-                .text-body p {
-                    margin-bottom: 20px;
-                    line-height: 1.2;
-                }
-        
-        .footer {
-            width: 150px;
-            margin: 0px auto 50px auto;
-            text-align: center;
+        .header-text {
+            font-family: 'Grimoire Noire', serif;
+            font-size: 80px;
+            margin: 40px auto 30px auto;
         }
 
-            .footer-link {
-                font-family: 'Canterbury', serif;
-                font-size: 20px;
+    .spread-container {
+        display: flex;
+        margin: 80px auto 30px auto;
+        justify-content: space-between;
+    }
+
+        .decoration {
+            width: 210px;
+            margin-top: 100px;
+            /* background-color: #6C6A4A; */
+        }
+
+        .house-container {
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .house {
+            width: 280px;
+            margin: 5px;
+            /* background-color: #6C6A4A; */
+            align-items: center;
+        }
+        
+            .house-border {
+                border: 1.75px solid #614A42;
+                border-radius: 30px;
+                width: 255px;
+                padding: 10px;
+                text-align: center;
+                margin: auto;
             }
 
+                .house-sigil {
+                    margin-top: -60px;
+                }
+
+                .house-name {
+                    font-family: 'Landsknecht', serif;
+                    font-size: 40px;
+                    margin-top: 20px;
+                }
+
+                .ruler-crown {
+                    margin: 10px auto 5px auto;
+                }
+
+                .ruler {
+                    font-family: 'Landsknecht', serif;
+                    font-size: 21px;
+                }
+
+                .small-crown {
+                    margin: 10px auto 5px auto;
+
+                }
+
+                .small-ruler {
+                    font-family: 'Landsknecht', serif;
+                    font-size: 19px;
+                }
+
+                .divider {
+                    margin: 20px auto 15px auto;
+                }
+
+                .house-summary {
+                    font-family: 'Highborne Blackletter', serif;
+                    font-size: 20px;
+                    margin: 10px;
+                }
+
+                .winchester-wolf {
+                    margin: -5px auto -15px auto;
+                }
 
 
 /* sticky strip, bottom */
